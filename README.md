@@ -1,2 +1,2 @@
 # Expendables
-# For the Expendables Java code
+Repository for the Expendables Java code
