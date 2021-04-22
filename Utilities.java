@@ -57,6 +57,7 @@ public class Utilities {
 		}
 	}// closeDB
 
+	
 	/**
 	 * This method creates an SQL statement to list fname, lname, salary of all
 	 * employees that work in the department with dname='Research'
@@ -145,74 +146,5 @@ public class Utilities {
 		return rset;
 	}// employeeByDNO
 
-	/**  
-	 * 1 Write and Test
-	 * Overload the open method that opens a MariaDB DB with the user name 
-	 * and password given as input.
-	 * 
-	 * @param username is a String that is the DB account username
-	 * @param password is a String that is the password the account
-	 */
-
-	
-	/**
-	 * 2 Write and Test 
-	 * Write a method that returns lname, fname, project number and hours of all 
-	 * employees that work on a project controlled by department, deptNum. Here 
-	 * deptNum is given as input from the client
-	 * 
-	 * @param deptNum is the controlling department number
-	 * @return ResultSet with lname, fname, project number and hours of all
-	 *         employees that work on a project controlled by department dno
-	 */
-
-	/**
-	 * 3 Write and Test
-	 * Write a method that returns for each project the number of employees 
-	 * that work on the project, the total number of hours they have all worked 
-	 * on the project, and the average number of hours each employee has worked 
-	 * on the project.
-	 * 
-	 * @return ResultSet that has for each project the number of employees that
-	 *         work on the project, the total number of hours they have all
-	 *         worked on the project, and the average number of hours each
-	 *         employee has worked on project
-	 */
-
-	/**
-	 * 4 Write and Test
-	 * Write a method that returns fname, lname, salary, and dno for each employee 
-	 * that works on a project with the employee specified by input values empFname, empLname
-	 * 
-	 * @param empFname is the first name of the employee
-	 * @param empLname is the last name of the employee
-	 * @return ResultSet that has fname, lname, salary, and dno for each
-	 *         employee that works on a project with the employee empFname,
-	 *         empLname
-	 */
-
-	/**
-	 * 5 Write and Test
-	 * Retrieve the names of employees who do not work on any project and their 
-	 * salary Names must be in the format "lname, fname" i.e., the last name and 
-	 * first name must be concatenated.
-	 * 
-	 * @return ResultSet that has employee name and salary of all employees that
-	 *         do not work on any project.
-	 */
-
-	/**
-	 * 6 Write and Test   ==> YOU MUST USE A PreparedStatement <==
-	 * This method will use a PreparedStatement and the
-	 * information in data to update the works_on table. Each row of the 2-dim
-	 * array, data, contains the 3 attributes for one tuple in the works_on
-	 * table. The 2-dim array is a nx3 array and the column format is 
-	 * (essn, pno, hours) The method returns the number of tuples successfully
-	 * inserted.
-	 * 
-	 * @param data is a nx3 table of Strings where each row has the format 
-	 *        (essn, pno, hours)
-	 * @return number of tuples successfully inserted into works_on
-	 */
 
 }// Utilities class
